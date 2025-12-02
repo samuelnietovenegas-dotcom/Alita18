@@ -1,0 +1,202 @@
+/* ======================================
+  PALETA Y BASE
+====================================== */
+:root {
+   --rojo: #E43D2F;
+   --negro: #000;
+   --amarillo: #FFD22E;
+   --navbar: #111;
+}
+body {
+   background-color: var(--rojo);
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+/* ======================================
+  NAVBAR
+====================================== */
+.topbar {
+   background-color: var(--navbar);
+}
+.topbar .nav-link {
+   color: #fff !important;
+   font-weight: 500;
+   margin-right: 10px;
+}
+.btn-signin {
+   background: var(--amarillo);
+   color: #000 !important;
+   padding: 7px 18px;
+   border-radius: 10px;
+   font-weight: 700;
+   margin-left: 10px;
+}
+/* ======================================
+  HERO (Página principal)
+====================================== */
+.hero {
+   background-color: var(--rojo);
+   padding-top: 40px;
+   padding-bottom: 40px;
+}
+.hero-title {
+   font-size: 3.3rem;
+   font-weight: 900;
+   color: #fff;
+   line-height: 1.1;
+}
+.line-white {
+   width: 140px;
+   height: 4px;
+   background: #fff;
+   border-radius: 10px;
+}
+.btn-order {
+   background: var(--amarillo);
+   color: #000;
+   padding: 12px 30px;
+   border-radius: 10px;
+   font-weight: 700;
+   text-decoration: none;
+   display: inline-block;
+}
+.hero-img {
+   width: 85%;
+   border-radius: 20px;
+}
+/* ======================================
+  SECCIÓN: MENÚ (Inicio)
+====================================== */
+.menu-title {
+   font-size: 2.5rem;
+   font-weight: 900;
+   color: #fff;
+}
+.menu-card {
+   background: var(--negro);
+   padding: 25px;
+   border-radius: 18px;
+   color: #fff;
+   font-weight: 600;
+   text-align: center;
+   transition: .2s;
+}
+.menu-card img {
+   margin-bottom: 10px;
+}
+.menu-card:hover {
+   transform: scale(1.05);
+}
+/* ======================================
+  SECCIÓN DE REGISTRO (Inicio)
+====================================== */
+.register-title {
+   font-size: 3rem;
+   font-weight: 900;
+   color: #fff;
+}
+.promo-box {
+   background: var(--amarillo);
+   padding: 18px 25px;
+   border-radius: 10px;
+   font-weight: 900;
+   color: #000;
+   display: inline-block;
+   font-size: 1.2rem;
+}
+.register-card {
+   background: #000;
+   padding: 35px;
+   border-radius: 22px;
+}
+.register-card input {
+   background: #222;
+   border: none;
+   padding: 12px;
+   color: #fff;
+}
+.register-card input::placeholder {
+   color: #ccc;
+}
+/* ======================================
+  PÁGINA MENÚ COMPLETO (menu.html)
+====================================== */
+.item-card {
+   background: #000;
+   padding: 25px;
+   border-radius: 20px;
+   color: #fff;
+   transition: .3s;
+}
+.item-card:hover {
+   transform: scale(1.03);
+}
+.item-card img {
+   border-radius: 15px;
+   margin-bottom: 10px;
+}
+/* ======================================
+  LOGIN & REGISTER PAGES
+====================================== */
+.auth-card {
+   width: 380px;
+   max-width: 90%;
+   background: #000;
+   padding: 40px;
+   border-radius: 22px;
+   color: white;
+   text-align: center;
+}
+.auth-card input {
+   background: #222;
+   padding: 12px;
+   border: none;
+   color: white;
+}
+.auth-card input::placeholder {
+   color: #bbb;
+}
+/* ======================================
+  PÁGINA PRODUCTO (producto.html)
+====================================== */
+.product-card {
+   background: #000;
+   padding: 35px;
+   border-radius: 20px;
+   color: #fff;
+}
+.product-card img {
+   border-radius: 20px;
+}
+.product-price {
+   font-size: 1.7rem;
+   font-weight: 800;
+   color: var(--amarillo);
+}
+/* ======================================
+  BOTONES GENERALES
+====================================== */
+.btn-warning {
+   background: var(--amarillo) !important;
+   color: #000 !important;
+   font-weight: 700 !important;
+   border-radius: 10px !important;
+}
+/* ======================================
+  RESPONSIVE
+====================================== */
+@media (max-width: 768px) {
+   .hero-title {
+       font-size: 2.4rem;
+   }
+   .register-title {
+       font-size: 2.3rem;
+   }
+   .promo-box {
+       font-size: 1rem;
+   }
+   .hero-img {
+       width: 100%;
+   }
+}
